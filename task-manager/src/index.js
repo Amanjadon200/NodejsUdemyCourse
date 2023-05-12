@@ -6,7 +6,6 @@ app.use(express.json());
 const userRouter=require('./routers/user')
 const taskRouter = require('./routers/task');
 app.use((req,res,next)=>{
-    console.log(req.method,req.path)
     // res.status(503).send("site is under maintainance Please try soon")
     next()
 })
